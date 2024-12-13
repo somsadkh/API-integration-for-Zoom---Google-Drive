@@ -1,0 +1,13 @@
+POST https://zoom.us/oauth/token
+HTTP/1.1
+
+# Header
+Host: zoom.us
+Authorization: Basic base64Encode(client_id:client_secret)
+Content-Type: application/x-www-form-urlencoded
+
+# Request body
+code: [CODE]
+grant_type: authorization_code
+redirect_uri: [REDIRECT URI]
+code_verifier: [CODE VERIFIER]
